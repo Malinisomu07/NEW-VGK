@@ -11,7 +11,7 @@ body{
     font-family:'poppins',sans-serif;
 }
 section{
-    min-height: 100vh;
+  margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,14 @@ section{
     font-size: 25px;
 }
 
+#contactf{
+    border-radius: 10px;
+    box-shadow: #642a38;
+}
+
+.mb-3{
+margin: 10px;
+}
 
 li{
     padding: 5px;
@@ -37,6 +45,12 @@ li{
     border-bottom: 2px solid #F84E77;
     transition: .1s;
 }
+.cardssep{
+    margin: 10px;
+    border:solid 2px #F84E77;
+
+}
+
 
 
 /* home page */
@@ -84,6 +98,11 @@ body{
     padding: 2px 4px;
 }
 @media (min-width: 1140px) {
+    .booknowform{
+        margin-left: 930px; 
+        margin-right: 1%;
+    
+    }
     .hori-timeline .events .event-list {
         display: inline-block;
         width: 24%;
@@ -115,8 +134,8 @@ body{
 
 
 
-#nbr{
-    font-size:62px;
+#nbr, #nbr1{
+    font-size:42px;
     margin:44px 0 0 0;
   }
 
@@ -137,7 +156,56 @@ body{
 
 /* 3D Plan */
 
+#myCarousel {
+    margin-top: 50px;
+}
 
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 845px) {
+.booknowform{
+   
+    margin-right: 1%;
+
+}
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+}
 
 /* Coantact */
 
